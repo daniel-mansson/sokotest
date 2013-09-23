@@ -21,6 +21,7 @@ Create a named pipe using mkfifo. Start sokotest using the new pipe as input. Co
 This is the expected format for an entry (without % and the text following it, comments like this is not supported).
 The order of the fields between begin and end is not specified. There can be multiple markings, using different IDs.
 
+```
 ;begin          % Marks the beginning of an entry
 name of state
 ;player         % (optional) The player position. Required for valid paths.
@@ -42,11 +43,13 @@ r g b (int int int)   % Color
 count (int)           % Number of markings
 x y (int int)         % Position of the marking, repeated 'count' times
 ;end                  % Marks the end of an entry
+```
 
 --------
 
 Example entry:
 
+```
 ;begin      
 Awesome example state
 ;player
@@ -79,4 +82,4 @@ RU
 2 2
 3 3
 ;end           
-
+```
