@@ -138,9 +138,9 @@ public class Sokoban extends BasicGame {
 		
 		float d = (float)dt/1000.0f;
 		Input input = container.getInput();
-		if(input.isKeyDown(Keyboard.KEY_MINUS) || input.isKeyDown(Keyboard.KEY_SUBTRACT))
+		if(input.isKeyDown(Keyboard.KEY_MINUS) || input.isKeyDown(Keyboard.KEY_SUBTRACT) || input.isKeyDown(Keyboard.KEY_COMMA))
 			scale -= (scale * d);
-		if(input.isKeyDown(Keyboard.KEY_ADD) || input.isKeyDown(13))
+		if(input.isKeyDown(Keyboard.KEY_ADD) || input.isKeyDown(13) || input.isKeyDown(Keyboard.KEY_PERIOD))
 			scale += (scale * d);
 
 
