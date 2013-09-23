@@ -9,11 +9,13 @@ sokotest reads sokoban state entries from stdin or by polling a file (when start
 --------
 
 Using windows
+
 Since named pipes are complicated in windows, it is recommended to use the '-file' flag. 
 Start sokotest with the argument "-file filename" and configure your IDE to pipe stdout to that file.
 Remember to flush the stream after each entry.
 
 Using linux
+
 Create a named pipe using mkfifo. Start sokotest using the new pipe as input. Configure your IDE to write to that pipe.
 
 --------
