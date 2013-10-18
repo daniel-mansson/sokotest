@@ -89,7 +89,7 @@ public class Sokoban extends BasicGame {
 		
 		if(drawList) {
 			int low = current - listCount/2;
-			int high = current + listCount;
+			int high = current + listCount/2;
 			
 			if(low < 0) {
 				high -= low;

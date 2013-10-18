@@ -62,7 +62,7 @@ public class Path {
 		if(path.isEmpty())
 			return;
 
-		
+		float div = 1.0f / (float)path.size();
 		float t = 0;
 		Vec2 prev = path.get(0);
 		for(int i = 1; i < path.size(); ++i) {
@@ -70,7 +70,7 @@ public class Path {
 			t = (float)(i - 1) / (float)(path.size() - 2);
 			Color c = new Color(c1.r * (1 - t) + c2.r * t, c1.g * (1 - t) + c2.g * t, c1.b * (1 - t) + c2.b * t);
 			g.setColor(c);
-			g.drawLine(prev.x+0.5f, prev.y+0.5f, pos.x+0.5f, pos.y+0.5f);
+			g.drawLine(prev.x+0.2f+0.6f*((float)i * div), prev.y+0.2f+0.6f*((float)i * div), pos.x+0.2f+0.6f*((float)(i+1) * div), pos.y+0.2f+0.6f*((float)(i+1) * div));
 			prev = pos;
 		}
 

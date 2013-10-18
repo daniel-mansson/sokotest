@@ -23,7 +23,7 @@ public class Main {
 		Sokoban game = new Sokoban("Let's debug some SOKOBAN!", useFile, args.length >= 2 ? args[1] : null);
 		try {
 			AppGameContainer app = new AppGameContainer(game);
-			app.setDisplayMode(1024, 650, false);
+			app.setDisplayMode(1024, 768, false);
 			app.setForceExit(false);
 			app.setAlwaysRender(true);
 			app.setShowFPS(false);
